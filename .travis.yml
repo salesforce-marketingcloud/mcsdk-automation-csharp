@@ -1,0 +1,7 @@
+language: csharp
+mono: none
+dotnet: 2.2
+script:
+  - dotnet build Salesforce.MarketingCloud.sln -c Release
+  - dotnet test ./src/Salesforce.MarketingCloud.UnitTests/Salesforce.MarketingCloud.UnitTests.csproj -c Release
+  - dotnet test ./src/Salesforce.MarketingCloud.Test/Salesforce.MarketingCloud.Test.csproj -c Release

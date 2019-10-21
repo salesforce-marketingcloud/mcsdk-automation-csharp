@@ -1,0 +1,10 @@
+﻿namespace Salesforce.MarketingCloud.Test
+{
+    public class ApiTests
+    {
+        protected readonly string authBasePath = "AUTH_TSE";
+        protected readonly string clientId = "clientId";
+        protected readonly string clientSecret = "clientSecret";
+        protected readonly string accountId = "";
+    }
+}
