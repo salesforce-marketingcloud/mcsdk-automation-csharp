@@ -1,3 +1,5 @@
+# This project is under development
+
 # Salesforce.MarketingCloud - the C# library for the Marketing Cloud REST API
 
 Marketing Cloud's REST API is our newest API. It supports multi-channel use cases, is much more lightweight and easy to use than our SOAP API, and is getting more comprehensive with every release.
