@@ -104,6 +104,7 @@ Class | Method | HTTP request | Description
 *AssetApi* | [**PartiallyUpdateAssetById**](docs/AssetApi.md#partiallyupdateassetbyid) | **PATCH** /asset/v1/content/assets/{id} | partiallyUpdateAssetById
 *CampaignApi* | [**CreateCampaign**](docs/CampaignApi.md#createcampaign) | **POST** /hub/v1/campaigns | createCampaign
 *CampaignApi* | [**DeleteCampaignById**](docs/CampaignApi.md#deletecampaignbyid) | **DELETE** /hub/v1/campaigns/{id} | deleteCampaignById
+*CampaignApi* | [**GetAllCampaigns**](docs/CampaignApi.md#getallcampaigns) | **GET** /hub/v1/campaigns | getAllCampaigns
 *CampaignApi* | [**GetCampaignById**](docs/CampaignApi.md#getcampaignbyid) | **GET** /hub/v1/campaigns/{id} | getCampaignById
 *TransactionalMessagingApi* | [**CreateEmailDefinition**](docs/TransactionalMessagingApi.md#createemaildefinition) | **POST** /messaging/v1/email/definitions/ | createEmailDefinition
 *TransactionalMessagingApi* | [**CreateSmsDefinition**](docs/TransactionalMessagingApi.md#createsmsdefinition) | **POST** /messaging/v1/sms/definitions | createSmsDefinition
@@ -146,6 +147,7 @@ Class | Method | HTTP request | Description
  - [Model.CreateSmsDefinitionSubscriptions](docs/CreateSmsDefinitionSubscriptions.md)
  - [Model.DeleteQueuedMessagesForSendDefinitionResponse](docs/DeleteQueuedMessagesForSendDefinitionResponse.md)
  - [Model.DeleteSendDefinitionResponse](docs/DeleteSendDefinitionResponse.md)
+ - [Model.GetAllCampaignsResponse](docs/GetAllCampaignsResponse.md)
  - [Model.GetDefinitionSendStatusForRecipientResponse](docs/GetDefinitionSendStatusForRecipientResponse.md)
  - [Model.GetDefinitionSendStatusForRecipientResponseInfo](docs/GetDefinitionSendStatusForRecipientResponseInfo.md)
  - [Model.GetDefinitionsNotSentToRecipientsMessage](docs/GetDefinitionsNotSentToRecipientsMessage.md)
