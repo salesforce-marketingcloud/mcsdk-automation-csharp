@@ -69,6 +69,25 @@ namespace Salesforce.MarketingCloud.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteCampaignByIdWithHttpInfo (string id);
         /// <summary>
+        /// getAllCampaigns
+        /// </summary>
+        /// <remarks>
+        /// Gets all campaigns.
+        /// </remarks>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>GetAllCampaignsResponse</returns>
+        GetAllCampaignsResponse GetAllCampaigns ();
+
+        /// <summary>
+        /// getAllCampaigns
+        /// </summary>
+        /// <remarks>
+        /// Gets all campaigns.
+        /// </remarks>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of GetAllCampaignsResponse</returns>
+        ApiResponse<GetAllCampaignsResponse> GetAllCampaignsWithHttpInfo ();
+        /// <summary>
         /// getCampaignById
         /// </summary>
         /// <remarks>
@@ -133,6 +152,25 @@ namespace Salesforce.MarketingCloud.Api
         /// <param name="id">The ID of the campaign to delete</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCampaignByIdAsyncWithHttpInfo (string id);
+        /// <summary>
+        /// getAllCampaigns
+        /// </summary>
+        /// <remarks>
+        /// Gets all campaigns.
+        /// </remarks>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of GetAllCampaignsResponse</returns>
+        System.Threading.Tasks.Task<GetAllCampaignsResponse> GetAllCampaignsAsync ();
+
+        /// <summary>
+        /// getAllCampaigns
+        /// </summary>
+        /// <remarks>
+        /// Gets all campaigns.
+        /// </remarks>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (GetAllCampaignsResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetAllCampaignsResponse>> GetAllCampaignsAsyncWithHttpInfo ();
         /// <summary>
         /// getCampaignById
         /// </summary>
@@ -443,6 +481,125 @@ namespace Salesforce.MarketingCloud.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+
+        /// <summary>
+        /// getAllCampaigns Gets all campaigns.
+        /// </summary>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>GetAllCampaignsResponse</returns>
+        public GetAllCampaignsResponse GetAllCampaigns ()
+        {
+             ApiResponse<GetAllCampaignsResponse> localVarResponse = GetAllCampaignsWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// getAllCampaigns Gets all campaigns.
+        /// </summary>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of GetAllCampaignsResponse</returns>
+        public ApiResponse< GetAllCampaignsResponse > GetAllCampaignsWithHttpInfo ()
+        {
+
+            var localVarPath = "/hub/v1/campaigns";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAllCampaigns", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetAllCampaignsResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (GetAllCampaignsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetAllCampaignsResponse)));
+        }
+
+        /// <summary>
+        /// getAllCampaigns Gets all campaigns.
+        /// </summary>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of GetAllCampaignsResponse</returns>
+        public async System.Threading.Tasks.Task<GetAllCampaignsResponse> GetAllCampaignsAsync ()
+        {
+             ApiResponse<GetAllCampaignsResponse> localVarResponse = await GetAllCampaignsAsyncWithHttpInfo();
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// getAllCampaigns Gets all campaigns.
+        /// </summary>
+        /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (GetAllCampaignsResponse)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetAllCampaignsResponse>> GetAllCampaignsAsyncWithHttpInfo ()
+        {
+
+            var localVarPath = "/hub/v1/campaigns";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetAllCampaigns", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<GetAllCampaignsResponse>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (GetAllCampaignsResponse) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetAllCampaignsResponse)));
         }
 
         /// <summary>
