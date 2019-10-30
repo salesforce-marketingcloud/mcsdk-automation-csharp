@@ -36,4 +36,4 @@ To find more information on how to consume the SDK, Refer to the [Regression tes
     - 👎 - downvote
 
 ## License
-By contributing your code, you agree to license your contribution under the terms of the [BSD 3-Clause License](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/license.md).
+By contributing your code, you agree to license your contribution under the terms of the [BSD 3-Clause License](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/blob/documentation/license.md).
