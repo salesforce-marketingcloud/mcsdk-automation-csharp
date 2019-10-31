@@ -25,40 +25,31 @@ using SwaggerDateConverter = Salesforce.MarketingCloud.Client.SwaggerDateConvert
 namespace Salesforce.MarketingCloud.Model
 {
     /// <summary>
-    /// GetSmsDefinitionsResponse
+    /// GetAllCampaignsResponse
     /// </summary>
     [DataContract]
-    public partial class GetSmsDefinitionsResponse :  IEquatable<GetSmsDefinitionsResponse>, IValidatableObject
+    public partial class GetAllCampaignsResponse :  IEquatable<GetAllCampaignsResponse>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetSmsDefinitionsResponse" /> class.
+        /// Initializes a new instance of the <see cref="GetAllCampaignsResponse" /> class.
         /// </summary>
-        /// <param name="requestId">The ID of the request.</param>
-        /// <param name="definitions">definitions.</param>
+        /// <param name="items">items.</param>
         /// <param name="count">Number of pages.</param>
         /// <param name="page">Page number to return..</param>
-        /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response..</param>
-        public GetSmsDefinitionsResponse(string requestId = default(string), List<CreateSmsDefinitionRequest> definitions = default(List<CreateSmsDefinitionRequest>), int? count = default(int?), int? page = default(int?), int? pageSize = default(int?))
+        /// <param name="pageSize">Number of campaigns, which are array elements, to return per paged response..</param>
+        public GetAllCampaignsResponse(List<Campaign> items = default(List<Campaign>), int? count = default(int?), int? page = default(int?), int? pageSize = default(int?))
         {
-            this.RequestId = requestId;
-            this.Definitions = definitions;
+            this.Items = items;
             this.Count = count;
             this.Page = page;
             this.PageSize = pageSize;
         }
         
         /// <summary>
-        /// The ID of the request
+        /// Gets or Sets Items
         /// </summary>
-        /// <value>The ID of the request</value>
-        [DataMember(Name="requestId", EmitDefaultValue=false)]
-        public string RequestId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Definitions
-        /// </summary>
-        [DataMember(Name="definitions", EmitDefaultValue=false)]
-        public List<CreateSmsDefinitionRequest> Definitions { get; set; }
+        [DataMember(Name="items", EmitDefaultValue=false)]
+        public List<Campaign> Items { get; set; }
 
         /// <summary>
         /// Number of pages
@@ -75,9 +66,9 @@ namespace Salesforce.MarketingCloud.Model
         public int? Page { get; set; }
 
         /// <summary>
-        /// Number of definitions, which are array elements, to return per paged response.
+        /// Number of campaigns, which are array elements, to return per paged response.
         /// </summary>
-        /// <value>Number of definitions, which are array elements, to return per paged response.</value>
+        /// <value>Number of campaigns, which are array elements, to return per paged response.</value>
         [DataMember(Name="pageSize", EmitDefaultValue=false)]
         public int? PageSize { get; set; }
 
@@ -88,9 +79,8 @@ namespace Salesforce.MarketingCloud.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class GetSmsDefinitionsResponse {\n");
-            sb.Append("  RequestId: ").Append(RequestId).Append("\n");
-            sb.Append("  Definitions: ").Append(Definitions).Append("\n");
+            sb.Append("class GetAllCampaignsResponse {\n");
+            sb.Append("  Items: ").Append(Items).Append("\n");
             sb.Append("  Count: ").Append(Count).Append("\n");
             sb.Append("  Page: ").Append(Page).Append("\n");
             sb.Append("  PageSize: ").Append(PageSize).Append("\n");
@@ -114,29 +104,24 @@ namespace Salesforce.MarketingCloud.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as GetSmsDefinitionsResponse);
+            return this.Equals(input as GetAllCampaignsResponse);
         }
 
         /// <summary>
-        /// Returns true if GetSmsDefinitionsResponse instances are equal
+        /// Returns true if GetAllCampaignsResponse instances are equal
         /// </summary>
-        /// <param name="input">Instance of GetSmsDefinitionsResponse to be compared</param>
+        /// <param name="input">Instance of GetAllCampaignsResponse to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(GetSmsDefinitionsResponse input)
+        public bool Equals(GetAllCampaignsResponse input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.RequestId == input.RequestId ||
-                    (this.RequestId != null &&
-                    this.RequestId.Equals(input.RequestId))
-                ) && 
-                (
-                    this.Definitions == input.Definitions ||
-                    this.Definitions != null &&
-                    this.Definitions.SequenceEqual(input.Definitions)
+                    this.Items == input.Items ||
+                    this.Items != null &&
+                    this.Items.SequenceEqual(input.Items)
                 ) && 
                 (
                     this.Count == input.Count ||
@@ -164,10 +149,8 @@ namespace Salesforce.MarketingCloud.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.RequestId != null)
-                    hashCode = hashCode * 59 + this.RequestId.GetHashCode();
-                if (this.Definitions != null)
-                    hashCode = hashCode * 59 + this.Definitions.GetHashCode();
+                if (this.Items != null)
+                    hashCode = hashCode * 59 + this.Items.GetHashCode();
                 if (this.Count != null)
                     hashCode = hashCode * 59 + this.Count.GetHashCode();
                 if (this.Page != null)
