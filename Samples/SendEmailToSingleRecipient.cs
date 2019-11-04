@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using Salesforce.MarketingCloud;
-using Salesforce.MarketingCloud.Api;
 using Salesforce.MarketingCloud.Model;
 
-namespace Samples
+namespace Salesforce.MarketingCloud.Samples
 {
     partial class Sample
     {
@@ -16,7 +13,7 @@ namespace Samples
             /* Replace the constructor parameters with your Marketing Cloud account credentials
             (<APPLICATION DATA-ACCESS PERMISSIONS> is not a mandatory parameter) */
 
-            var client = new Client(
+            var client = new Api.Client(
                 "<AUTH BASE URL>",
                 "<CLIENT ID>",
                 "<CLIENT SECRET>",

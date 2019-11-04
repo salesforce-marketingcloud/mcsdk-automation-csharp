@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Salesforce.MarketingCloud;
-using Salesforce.MarketingCloud.Api;
 using Salesforce.MarketingCloud.Model;
 
-namespace Samples
+namespace Salesforce.MarketingCloud.Samples
 {
     partial class Sample
     {
@@ -15,7 +13,7 @@ namespace Samples
             const string contact2Key = "<CONTACT2 KEY>";
 
             // Environment variables instantiated client:
-            var client = new Client();
+            var client = new Api.Client();
 
             // Get the asset, transactional messaging API instances:
             var assetApi = client.AssetApi;

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Samples
+namespace Salesforce.MarketingCloud.Samples
 {
     partial class Sample
     {

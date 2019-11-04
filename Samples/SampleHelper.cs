@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 using Salesforce.MarketingCloud.Api;
 using Salesforce.MarketingCloud.Model;
 
-namespace Samples
+namespace Salesforce.MarketingCloud.Samples
 {
     public class SampleHelper
     {
