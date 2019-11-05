@@ -7,7 +7,7 @@
 The Salesforce Marketing Cloud C# SDK enables developers to easily access the Salesforce Marketing Cloud via the C# platform. 
 
 - This is an upgraded version of the existing community supported [Fuel-CSharp](https://github.com/salesforce-marketingcloud/FuelSDK-CSharp) SDK
-- Unlike the [Fuel-CSharp](https://github.com/salesforce-marketingcloud/FuelSDK-CSharp), this SDK is auto generated using [Swagger Codegen](https://github.com/swagger-api/swagger-codegen) and built on top of .Net Core 2.0
+- Unlike the [Fuel-CSharp](https://github.com/salesforce-marketingcloud/FuelSDK-CSharp), this SDK is auto generated using [Swagger Codegen](https://github.com/swagger-api/swagger-codegen) and built on top of .Net Standard 2.0
 
 ## Supported Features
 
@@ -15,18 +15,18 @@ The Salesforce Marketing Cloud C# SDK enables developers to easily access the Sa
 
 ## Environment Requirements
 
-- .Net Core >=2.0 (Recommended) 
+- .Net Core >= 2.0 (Recommended) 
 - .Net Framework >= 4.6.1 (Recommended >= 4.7.2)
 
 ## Download
 
-To consume this SDK add the [Salesforce Marketing Cloud V2 CSharp SDK nuget package](https://www.nuget.org/) to your Project using the following command: 
+To consume this SDK add the [Salesforce Marketing Cloud V2 CSharp SDK nuget package](https://www.nuget.org/SalesforceMarketingCloudSDK) to your Project using the following command: 
 
-```Install-Package SFMC.XXXX```
+```Install-Package SalesforceMarketingCloudSDK```
 
 ## Getting Started
 
-To find more information on how to consume the SDK, Refer to the [Regression tests](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/1.0/src/Salesforce.MarketingCloud.Test/Api) or the [Code Samples](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/)
+To find more information on how to consume the SDK, Refer to the [Regression tests](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/1.0/src/Salesforce.MarketingCloud.Test/Api) or the [Code Samples](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/1.0/Samples)
 
 ## Contact us
 
