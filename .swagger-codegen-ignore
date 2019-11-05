@@ -25,3 +25,7 @@
 #src/**/Salesforce.MarketingCloud.csproj
 #src/**/Salesforce.MarketingCloud.Test.csproj
 Salesforce.MarketingCloud.sln
+build.bat
+build.sh
+git_push.sh
+mono_nunit_test.sh
