@@ -457,7 +457,7 @@ No authorization required
 
 <a name="getemaildefinitions"></a>
 # **GetEmailDefinitions**
-> GetEmailDefinitionsResponse GetEmailDefinitions (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+> GetEmailDefinitionsResponse GetEmailDefinitions (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
 
 getEmailDefinitions
 
@@ -478,7 +478,7 @@ namespace Example
         public void main()
         {
             var apiInstance = new TransactionalMessagingApi();
-            var status = status_example;  // string | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional) 
+            var filter = filter_example;  // string | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional) 
             var pageSize = 8.14;  // decimal? | Number of definitions, which are array elements, to return per paged response. (optional) 
             var page = 8.14;  // decimal? | Page number to return. (optional) 
             var orderBy = orderBy_example;  // string | Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional) 
@@ -486,7 +486,7 @@ namespace Example
             try
             {
                 // getEmailDefinitions
-                GetEmailDefinitionsResponse result = apiInstance.GetEmailDefinitions(status, pageSize, page, orderBy);
+                GetEmailDefinitionsResponse result = apiInstance.GetEmailDefinitions(filter, pageSize, page, orderBy);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -502,7 +502,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **string**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
+ **filter** | **string**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
  **pageSize** | **decimal?**| Number of definitions, which are array elements, to return per paged response. | [optional] 
  **page** | **decimal?**| Page number to return. | [optional] 
  **orderBy** | **string**| Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. | [optional] 
@@ -898,7 +898,7 @@ No authorization required
 
 <a name="getsmsdefinitions"></a>
 # **GetSmsDefinitions**
-> GetSmsDefinitionsResponse GetSmsDefinitions (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+> GetSmsDefinitionsResponse GetSmsDefinitions (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
 
 getSmsDefinitions
 
@@ -919,7 +919,7 @@ namespace Example
         public void main()
         {
             var apiInstance = new TransactionalMessagingApi();
-            var status = status_example;  // string | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional) 
+            var filter = filter_example;  // string | Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional) 
             var pageSize = 8.14;  // decimal? | Number of definitions, which are array elements, to return per paged response. (optional) 
             var page = 8.14;  // decimal? | Page number to return. (optional) 
             var orderBy = orderBy_example;  // string | Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional) 
@@ -927,7 +927,7 @@ namespace Example
             try
             {
                 // getSmsDefinitions
-                GetSmsDefinitionsResponse result = apiInstance.GetSmsDefinitions(status, pageSize, page, orderBy);
+                GetSmsDefinitionsResponse result = apiInstance.GetSmsDefinitions(filter, pageSize, page, orderBy);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -943,7 +943,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **string**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
+ **filter** | **string**| Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. | [optional] 
  **pageSize** | **decimal?**| Number of definitions, which are array elements, to return per paged response. | [optional] 
  **page** | **decimal?**| Page number to return. | [optional] 
  **orderBy** | **string**| Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. | [optional] 

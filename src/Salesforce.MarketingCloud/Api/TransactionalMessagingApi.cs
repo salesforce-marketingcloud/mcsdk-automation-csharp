@@ -180,12 +180,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of email definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>GetEmailDefinitionsResponse</returns>
-        GetEmailDefinitionsResponse GetEmailDefinitions (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        GetEmailDefinitionsResponse GetEmailDefinitions (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
 
         /// <summary>
         /// getEmailDefinitions
@@ -194,12 +194,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of email definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>ApiResponse of GetEmailDefinitionsResponse</returns>
-        ApiResponse<GetEmailDefinitionsResponse> GetEmailDefinitionsWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        ApiResponse<GetEmailDefinitionsResponse> GetEmailDefinitionsWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
         /// <summary>
         /// getEmailSendStatusForRecipient
         /// </summary>
@@ -341,12 +341,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of SMS definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>GetSmsDefinitionsResponse</returns>
-        GetSmsDefinitionsResponse GetSmsDefinitions (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        GetSmsDefinitionsResponse GetSmsDefinitions (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
 
         /// <summary>
         /// getSmsDefinitions
@@ -355,12 +355,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of SMS definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>ApiResponse of GetSmsDefinitionsResponse</returns>
-        ApiResponse<GetSmsDefinitionsResponse> GetSmsDefinitionsWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        ApiResponse<GetSmsDefinitionsResponse> GetSmsDefinitionsWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
         /// <summary>
         /// getSmsSendStatusForRecipient
         /// </summary>
@@ -672,12 +672,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of email definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of GetEmailDefinitionsResponse</returns>
-        System.Threading.Tasks.Task<GetEmailDefinitionsResponse> GetEmailDefinitionsAsync (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        System.Threading.Tasks.Task<GetEmailDefinitionsResponse> GetEmailDefinitionsAsync (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
 
         /// <summary>
         /// getEmailDefinitions
@@ -686,12 +686,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of email definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of ApiResponse (GetEmailDefinitionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetEmailDefinitionsResponse>> GetEmailDefinitionsAsyncWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        System.Threading.Tasks.Task<ApiResponse<GetEmailDefinitionsResponse>> GetEmailDefinitionsAsyncWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
         /// <summary>
         /// getEmailSendStatusForRecipient
         /// </summary>
@@ -833,12 +833,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of SMS definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of GetSmsDefinitionsResponse</returns>
-        System.Threading.Tasks.Task<GetSmsDefinitionsResponse> GetSmsDefinitionsAsync (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        System.Threading.Tasks.Task<GetSmsDefinitionsResponse> GetSmsDefinitionsAsync (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
 
         /// <summary>
         /// getSmsDefinitions
@@ -847,12 +847,12 @@ namespace Salesforce.MarketingCloud.Api
         /// Gets a list of SMS definitions.
         /// </remarks>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of ApiResponse (GetSmsDefinitionsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetSmsDefinitionsResponse>> GetSmsDefinitionsAsyncWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
+        System.Threading.Tasks.Task<ApiResponse<GetSmsDefinitionsResponse>> GetSmsDefinitionsAsyncWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null);
         /// <summary>
         /// getSmsSendStatusForRecipient
         /// </summary>
@@ -1974,14 +1974,14 @@ namespace Salesforce.MarketingCloud.Api
         /// getEmailDefinitions Gets a list of email definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>GetEmailDefinitionsResponse</returns>
-        public GetEmailDefinitionsResponse GetEmailDefinitions (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public GetEmailDefinitionsResponse GetEmailDefinitions (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
-             ApiResponse<GetEmailDefinitionsResponse> localVarResponse = GetEmailDefinitionsWithHttpInfo(status, pageSize, page, orderBy);
+             ApiResponse<GetEmailDefinitionsResponse> localVarResponse = GetEmailDefinitionsWithHttpInfo(filter, pageSize, page, orderBy);
              return localVarResponse.Data;
         }
 
@@ -1989,12 +1989,12 @@ namespace Salesforce.MarketingCloud.Api
         /// getEmailDefinitions Gets a list of email definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>ApiResponse of GetEmailDefinitionsResponse</returns>
-        public ApiResponse< GetEmailDefinitionsResponse > GetEmailDefinitionsWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public ApiResponse< GetEmailDefinitionsResponse > GetEmailDefinitionsWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
 
             var localVarPath = "/messaging/v1/email/definitions/";
@@ -2017,10 +2017,10 @@ namespace Salesforce.MarketingCloud.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (status != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "status", status)); // query parameter
-            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "pageSize", pageSize)); // query parameter
-            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
-            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "orderBy", orderBy)); // query parameter
+            if (filter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$filter", filter)); // query parameter
+            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$pageSize", pageSize)); // query parameter
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$page", page)); // query parameter
+            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$orderBy", orderBy)); // query parameter
 
 
             // make the HTTP request
@@ -2045,14 +2045,14 @@ namespace Salesforce.MarketingCloud.Api
         /// getEmailDefinitions Gets a list of email definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of GetEmailDefinitionsResponse</returns>
-        public async System.Threading.Tasks.Task<GetEmailDefinitionsResponse> GetEmailDefinitionsAsync (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public async System.Threading.Tasks.Task<GetEmailDefinitionsResponse> GetEmailDefinitionsAsync (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
-             ApiResponse<GetEmailDefinitionsResponse> localVarResponse = await GetEmailDefinitionsAsyncWithHttpInfo(status, pageSize, page, orderBy);
+             ApiResponse<GetEmailDefinitionsResponse> localVarResponse = await GetEmailDefinitionsAsyncWithHttpInfo(filter, pageSize, page, orderBy);
              return localVarResponse.Data;
 
         }
@@ -2061,12 +2061,12 @@ namespace Salesforce.MarketingCloud.Api
         /// getEmailDefinitions Gets a list of email definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of ApiResponse (GetEmailDefinitionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetEmailDefinitionsResponse>> GetEmailDefinitionsAsyncWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public async System.Threading.Tasks.Task<ApiResponse<GetEmailDefinitionsResponse>> GetEmailDefinitionsAsyncWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
 
             var localVarPath = "/messaging/v1/email/definitions/";
@@ -2089,10 +2089,10 @@ namespace Salesforce.MarketingCloud.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (status != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "status", status)); // query parameter
-            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "pageSize", pageSize)); // query parameter
-            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
-            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "orderBy", orderBy)); // query parameter
+            if (filter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$filter", filter)); // query parameter
+            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$pageSize", pageSize)); // query parameter
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$page", page)); // query parameter
+            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$orderBy", orderBy)); // query parameter
 
 
             // make the HTTP request
@@ -2927,14 +2927,14 @@ namespace Salesforce.MarketingCloud.Api
         /// getSmsDefinitions Gets a list of SMS definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>GetSmsDefinitionsResponse</returns>
-        public GetSmsDefinitionsResponse GetSmsDefinitions (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public GetSmsDefinitionsResponse GetSmsDefinitions (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
-             ApiResponse<GetSmsDefinitionsResponse> localVarResponse = GetSmsDefinitionsWithHttpInfo(status, pageSize, page, orderBy);
+             ApiResponse<GetSmsDefinitionsResponse> localVarResponse = GetSmsDefinitionsWithHttpInfo(filter, pageSize, page, orderBy);
              return localVarResponse.Data;
         }
 
@@ -2942,12 +2942,12 @@ namespace Salesforce.MarketingCloud.Api
         /// getSmsDefinitions Gets a list of SMS definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>ApiResponse of GetSmsDefinitionsResponse</returns>
-        public ApiResponse< GetSmsDefinitionsResponse > GetSmsDefinitionsWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public ApiResponse< GetSmsDefinitionsResponse > GetSmsDefinitionsWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
 
             var localVarPath = "/messaging/v1/sms/definitions";
@@ -2970,10 +2970,10 @@ namespace Salesforce.MarketingCloud.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (status != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "status", status)); // query parameter
-            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "pageSize", pageSize)); // query parameter
-            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
-            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "orderBy", orderBy)); // query parameter
+            if (filter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$filter", filter)); // query parameter
+            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$pageSize", pageSize)); // query parameter
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$page", page)); // query parameter
+            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$orderBy", orderBy)); // query parameter
 
 
             // make the HTTP request
@@ -2998,14 +2998,14 @@ namespace Salesforce.MarketingCloud.Api
         /// getSmsDefinitions Gets a list of SMS definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of GetSmsDefinitionsResponse</returns>
-        public async System.Threading.Tasks.Task<GetSmsDefinitionsResponse> GetSmsDefinitionsAsync (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public async System.Threading.Tasks.Task<GetSmsDefinitionsResponse> GetSmsDefinitionsAsync (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
-             ApiResponse<GetSmsDefinitionsResponse> localVarResponse = await GetSmsDefinitionsAsyncWithHttpInfo(status, pageSize, page, orderBy);
+             ApiResponse<GetSmsDefinitionsResponse> localVarResponse = await GetSmsDefinitionsAsyncWithHttpInfo(filter, pageSize, page, orderBy);
              return localVarResponse.Data;
 
         }
@@ -3014,12 +3014,12 @@ namespace Salesforce.MarketingCloud.Api
         /// getSmsDefinitions Gets a list of SMS definitions.
         /// </summary>
         /// <exception cref="Salesforce.MarketingCloud.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="status">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
+        /// <param name="filter">Filter by status type. Accepted values are active, inactive, or deleted. Valid operations are eq and neq. (optional)</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response. (optional)</param>
         /// <param name="page">Page number to return. (optional)</param>
         /// <param name="orderBy">Sort by a dimension. You can sort by only one dimension. Accepted values are definitionKey, name, createdDate, modifiedDate, and status. (optional)</param>
         /// <returns>Task of ApiResponse (GetSmsDefinitionsResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GetSmsDefinitionsResponse>> GetSmsDefinitionsAsyncWithHttpInfo (string status = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
+        public async System.Threading.Tasks.Task<ApiResponse<GetSmsDefinitionsResponse>> GetSmsDefinitionsAsyncWithHttpInfo (string filter = null, decimal? pageSize = null, decimal? page = null, string orderBy = null)
         {
 
             var localVarPath = "/messaging/v1/sms/definitions";
@@ -3042,10 +3042,10 @@ namespace Salesforce.MarketingCloud.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (status != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "status", status)); // query parameter
-            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "pageSize", pageSize)); // query parameter
-            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
-            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "orderBy", orderBy)); // query parameter
+            if (filter != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$filter", filter)); // query parameter
+            if (pageSize != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$pageSize", pageSize)); // query parameter
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$page", page)); // query parameter
+            if (orderBy != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "$orderBy", orderBy)); // query parameter
 
 
             // make the HTTP request
