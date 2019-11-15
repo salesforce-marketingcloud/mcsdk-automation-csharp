@@ -30,7 +30,7 @@ Method | HTTP request | Description
 
 <a name="createemaildefinition"></a>
 # **CreateEmailDefinition**
-> CreateEmailDefinitionRequest CreateEmailDefinition (CreateEmailDefinitionRequest body)
+> EmailDefinition CreateEmailDefinition (EmailDefinition body)
 
 createEmailDefinition
 
@@ -51,12 +51,12 @@ namespace Example
         public void main()
         {
             var apiInstance = new TransactionalMessagingApi();
-            var body = new CreateEmailDefinitionRequest(); // CreateEmailDefinitionRequest | JSON Parameters
+            var body = new EmailDefinition(); // EmailDefinition | JSON Parameters
 
             try
             {
                 // createEmailDefinition
-                CreateEmailDefinitionRequest result = apiInstance.CreateEmailDefinition(body);
+                EmailDefinition result = apiInstance.CreateEmailDefinition(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -72,11 +72,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)| JSON Parameters | 
+ **body** | [**EmailDefinition**](EmailDefinition.md)| JSON Parameters | 
 
 ### Return type
 
-[**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)
+[**EmailDefinition**](EmailDefinition.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ No authorization required
 
 <a name="createsmsdefinition"></a>
 # **CreateSmsDefinition**
-> CreateSmsDefinitionRequest CreateSmsDefinition (CreateSmsDefinitionRequest body)
+> SmsDefinition CreateSmsDefinition (SmsDefinition body)
 
 createSmsDefinition
 
@@ -112,12 +112,12 @@ namespace Example
         public void main()
         {
             var apiInstance = new TransactionalMessagingApi();
-            var body = new CreateSmsDefinitionRequest(); // CreateSmsDefinitionRequest | JSON Parameters
+            var body = new SmsDefinition(); // SmsDefinition | JSON Parameters
 
             try
             {
                 // createSmsDefinition
-                CreateSmsDefinitionRequest result = apiInstance.CreateSmsDefinition(body);
+                SmsDefinition result = apiInstance.CreateSmsDefinition(body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -133,11 +133,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)| JSON Parameters | 
+ **body** | [**SmsDefinition**](SmsDefinition.md)| JSON Parameters | 
 
 ### Return type
 
-[**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)
+[**SmsDefinition**](SmsDefinition.md)
 
 ### Authorization
 
@@ -396,7 +396,7 @@ No authorization required
 
 <a name="getemaildefinition"></a>
 # **GetEmailDefinition**
-> CreateEmailDefinitionRequest GetEmailDefinition (string definitionKey)
+> EmailDefinition GetEmailDefinition (string definitionKey)
 
 getEmailDefinition
 
@@ -422,7 +422,7 @@ namespace Example
             try
             {
                 // getEmailDefinition
-                CreateEmailDefinitionRequest result = apiInstance.GetEmailDefinition(definitionKey);
+                EmailDefinition result = apiInstance.GetEmailDefinition(definitionKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -442,7 +442,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)
+[**EmailDefinition**](EmailDefinition.md)
 
 ### Authorization
 
@@ -837,7 +837,7 @@ No authorization required
 
 <a name="getsmsdefinition"></a>
 # **GetSmsDefinition**
-> CreateSmsDefinitionRequest GetSmsDefinition (string definitionKey)
+> SmsDefinition GetSmsDefinition (string definitionKey)
 
 getSmsDefinition
 
@@ -863,7 +863,7 @@ namespace Example
             try
             {
                 // getSmsDefinition
-                CreateSmsDefinitionRequest result = apiInstance.GetSmsDefinition(definitionKey);
+                SmsDefinition result = apiInstance.GetSmsDefinition(definitionKey);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -883,7 +883,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)
+[**SmsDefinition**](SmsDefinition.md)
 
 ### Authorization
 
@@ -1026,7 +1026,7 @@ No authorization required
 
 <a name="partiallyupdateemaildefinition"></a>
 # **PartiallyUpdateEmailDefinition**
-> CreateEmailDefinitionRequest PartiallyUpdateEmailDefinition (string definitionKey, UpdateEmailDefinitionRequest body)
+> EmailDefinition PartiallyUpdateEmailDefinition (string definitionKey, UpdateEmailDefinitionRequest body)
 
 partiallyUpdateEmailDefinition
 
@@ -1053,7 +1053,7 @@ namespace Example
             try
             {
                 // partiallyUpdateEmailDefinition
-                CreateEmailDefinitionRequest result = apiInstance.PartiallyUpdateEmailDefinition(definitionKey, body);
+                EmailDefinition result = apiInstance.PartiallyUpdateEmailDefinition(definitionKey, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1074,7 +1074,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateEmailDefinitionRequest**](CreateEmailDefinitionRequest.md)
+[**EmailDefinition**](EmailDefinition.md)
 
 ### Authorization
 
@@ -1089,7 +1089,7 @@ No authorization required
 
 <a name="partiallyupdatesmsdefinition"></a>
 # **PartiallyUpdateSmsDefinition**
-> CreateSmsDefinitionRequest PartiallyUpdateSmsDefinition (string definitionKey, UpdateSmsDefinitionRequest body)
+> SmsDefinition PartiallyUpdateSmsDefinition (string definitionKey, UpdateSmsDefinitionRequest body)
 
 partiallyUpdateSmsDefinition
 
@@ -1116,7 +1116,7 @@ namespace Example
             try
             {
                 // partiallyUpdateSmsDefinition
-                CreateSmsDefinitionRequest result = apiInstance.PartiallyUpdateSmsDefinition(definitionKey, body);
+                SmsDefinition result = apiInstance.PartiallyUpdateSmsDefinition(definitionKey, body);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1137,7 +1137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateSmsDefinitionRequest**](CreateSmsDefinitionRequest.md)
+[**SmsDefinition**](SmsDefinition.md)
 
 ### Authorization
 

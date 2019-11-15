@@ -25,29 +25,29 @@ using SwaggerDateConverter = Salesforce.MarketingCloud.Client.SwaggerDateConvert
 namespace Salesforce.MarketingCloud.Model
 {
     /// <summary>
-    /// CreateSmsDefinitionSubscriptions
+    /// SmsDefinitionSubscriptions
     /// </summary>
     [DataContract]
-    public partial class CreateSmsDefinitionSubscriptions :  IEquatable<CreateSmsDefinitionSubscriptions>, IValidatableObject
+    public partial class SmsDefinitionSubscriptions :  IEquatable<SmsDefinitionSubscriptions>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateSmsDefinitionSubscriptions" /> class.
+        /// Initializes a new instance of the <see cref="SmsDefinitionSubscriptions" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CreateSmsDefinitionSubscriptions() { }
+        protected SmsDefinitionSubscriptions() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateSmsDefinitionSubscriptions" /> class.
+        /// Initializes a new instance of the <see cref="SmsDefinitionSubscriptions" /> class.
         /// </summary>
         /// <param name="shortCode">The short code for the mobile transmissions for each message on this definition. (required).</param>
         /// <param name="countryCode">The country code associated with the shortCode for the mobile transmissions for each message on this definition. (required).</param>
         /// <param name="keyword">The keyword used to track messages..</param>
         /// <param name="autoAddSubscriber">Permits adding a recipient as subscriber against the shortCode using contactKey. When false, the message is rejected if contactKey does not exist as a subscriber. Default is true. (default to true).</param>
-        public CreateSmsDefinitionSubscriptions(string shortCode = default(string), string countryCode = default(string), string keyword = default(string), bool? autoAddSubscriber = true)
+        public SmsDefinitionSubscriptions(string shortCode = default(string), string countryCode = default(string), string keyword = default(string), bool? autoAddSubscriber = true)
         {
             // to ensure "shortCode" is required (not null)
             if (shortCode == null)
             {
-                throw new InvalidDataException("shortCode is a required property for CreateSmsDefinitionSubscriptions and cannot be null");
+                throw new InvalidDataException("shortCode is a required property for SmsDefinitionSubscriptions and cannot be null");
             }
             else
             {
@@ -56,7 +56,7 @@ namespace Salesforce.MarketingCloud.Model
             // to ensure "countryCode" is required (not null)
             if (countryCode == null)
             {
-                throw new InvalidDataException("countryCode is a required property for CreateSmsDefinitionSubscriptions and cannot be null");
+                throw new InvalidDataException("countryCode is a required property for SmsDefinitionSubscriptions and cannot be null");
             }
             else
             {
@@ -109,7 +109,7 @@ namespace Salesforce.MarketingCloud.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CreateSmsDefinitionSubscriptions {\n");
+            sb.Append("class SmsDefinitionSubscriptions {\n");
             sb.Append("  ShortCode: ").Append(ShortCode).Append("\n");
             sb.Append("  CountryCode: ").Append(CountryCode).Append("\n");
             sb.Append("  Keyword: ").Append(Keyword).Append("\n");
@@ -134,15 +134,15 @@ namespace Salesforce.MarketingCloud.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CreateSmsDefinitionSubscriptions);
+            return this.Equals(input as SmsDefinitionSubscriptions);
         }
 
         /// <summary>
-        /// Returns true if CreateSmsDefinitionSubscriptions instances are equal
+        /// Returns true if SmsDefinitionSubscriptions instances are equal
         /// </summary>
-        /// <param name="input">Instance of CreateSmsDefinitionSubscriptions to be compared</param>
+        /// <param name="input">Instance of SmsDefinitionSubscriptions to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CreateSmsDefinitionSubscriptions input)
+        public bool Equals(SmsDefinitionSubscriptions input)
         {
             if (input == null)
                 return false;

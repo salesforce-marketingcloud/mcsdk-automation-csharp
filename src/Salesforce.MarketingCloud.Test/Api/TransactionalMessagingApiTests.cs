@@ -550,7 +550,7 @@ namespace Salesforce.MarketingCloud.Test
             Assert.IsNotNull(getSMSsNotSentToRecipientsResponse.PageSize);
         }
 
-        private CreateEmailDefinitionRequest CreateEmailDefinitionObject()
+        private EmailDefinition CreateEmailDefinitionObject()
         {
             var emailDefinitionKey = $"{Guid.NewGuid()}";
             var emailDefinitionName = $"{Guid.NewGuid()}";
@@ -562,11 +562,11 @@ namespace Salesforce.MarketingCloud.Test
                 var createAssetResult = assetApiClient.CreateAsset(emailAsset);
                 var customerKey = createAssetResult.CustomerKey;
 
-                var content = new CreateEmailDefinitionContent(customerKey);
+                var content = new EmailDefinitionContent(customerKey);
 
                 const string subscribersListKey = "All Subscribers";
-                var subscriptions = new CreateEmailDefinitionSubscriptions(subscribersListKey);
-                var emailDefinition = new CreateEmailDefinitionRequest(emailDefinitionName, emailDefinitionKey, content: content, subscriptions: subscriptions);
+                var subscriptions = new EmailDefinitionSubscriptions(subscribersListKey);
+                var emailDefinition = new EmailDefinition(emailDefinitionName, emailDefinitionKey, content: content, subscriptions: subscriptions);
 
                 return emailDefinition;
             }
@@ -577,7 +577,7 @@ namespace Salesforce.MarketingCloud.Test
             }
         }
 
-        private CreateSmsDefinitionRequest CreateSmsDefinitionObject()
+        private SmsDefinition CreateSmsDefinitionObject()
         {
             var smsDefinitionKey = $"{Guid.NewGuid()}";
             var smsDefinitionName = $"{Guid.NewGuid()}";
@@ -586,10 +586,10 @@ namespace Salesforce.MarketingCloud.Test
             var keyword = configProvider.Get(EnvVariableName.KEYWORD);
             var countryCode = "US";
 
-            var subscriptions = new CreateSmsDefinitionSubscriptions(shortCode, countryCode, keyword);
-            var content = new CreateSmsDefinitionContent("Content message");
+            var subscriptions = new SmsDefinitionSubscriptions(shortCode, countryCode, keyword);
+            var content = new SmsDefinitionContent("Content message");
 
-            var smsDefinition = new CreateSmsDefinitionRequest(smsDefinitionKey, smsDefinitionName, content, subscriptions: subscriptions);
+            var smsDefinition = new SmsDefinition(smsDefinitionKey, smsDefinitionName, content, subscriptions: subscriptions);
 
             return smsDefinition;
         }

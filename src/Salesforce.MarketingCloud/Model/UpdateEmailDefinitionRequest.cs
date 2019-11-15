@@ -40,7 +40,7 @@ namespace Salesforce.MarketingCloud.Model
         /// <param name="classification">Marketing Cloud external key of a sending classification defined in Email Studio Administration. Only transactional classifications are permitted. Default is default transactional..</param>
         /// <param name="subscriptions">subscriptions.</param>
         /// <param name="options">options.</param>
-        public UpdateEmailDefinitionRequest(string name = default(string), CreateEmailDefinitionContent content = default(CreateEmailDefinitionContent), string status = default(string), string description = default(string), string classification = default(string), CreateEmailDefinitionSubscriptions subscriptions = default(CreateEmailDefinitionSubscriptions), CreateEmailDefinitionOptionsRequest options = default(CreateEmailDefinitionOptionsRequest))
+        public UpdateEmailDefinitionRequest(string name = default(string), EmailDefinitionContent content = default(EmailDefinitionContent), string status = default(string), string description = default(string), string classification = default(string), EmailDefinitionSubscriptions subscriptions = default(EmailDefinitionSubscriptions), EmailDefinitionOptions options = default(EmailDefinitionOptions))
         {
             this.Name = name;
             this.Content = content;
@@ -62,7 +62,7 @@ namespace Salesforce.MarketingCloud.Model
         /// Gets or Sets Content
         /// </summary>
         [DataMember(Name="content", EmitDefaultValue=false)]
-        public CreateEmailDefinitionContent Content { get; set; }
+        public EmailDefinitionContent Content { get; set; }
 
         /// <summary>
         /// Operational state of the definition: active, inactive, or deleted. A message sent to an active definition is processed and delivered. A message sent to an inactive definition isn’t processed or delivered. Instead, the message is queued for later processing for up to three days.
@@ -89,13 +89,13 @@ namespace Salesforce.MarketingCloud.Model
         /// Gets or Sets Subscriptions
         /// </summary>
         [DataMember(Name="subscriptions", EmitDefaultValue=false)]
-        public CreateEmailDefinitionSubscriptions Subscriptions { get; set; }
+        public EmailDefinitionSubscriptions Subscriptions { get; set; }
 
         /// <summary>
         /// Gets or Sets Options
         /// </summary>
         [DataMember(Name="options", EmitDefaultValue=false)]
-        public CreateEmailDefinitionOptionsRequest Options { get; set; }
+        public EmailDefinitionOptions Options { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

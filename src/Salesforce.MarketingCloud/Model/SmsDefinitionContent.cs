@@ -25,39 +25,39 @@ using SwaggerDateConverter = Salesforce.MarketingCloud.Client.SwaggerDateConvert
 namespace Salesforce.MarketingCloud.Model
 {
     /// <summary>
-    /// CreateEmailDefinitionContent
+    /// SmsDefinitionContent
     /// </summary>
     [DataContract]
-    public partial class CreateEmailDefinitionContent :  IEquatable<CreateEmailDefinitionContent>, IValidatableObject
+    public partial class SmsDefinitionContent :  IEquatable<SmsDefinitionContent>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateEmailDefinitionContent" /> class.
+        /// Initializes a new instance of the <see cref="SmsDefinitionContent" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CreateEmailDefinitionContent() { }
+        protected SmsDefinitionContent() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateEmailDefinitionContent" /> class.
+        /// Initializes a new instance of the <see cref="SmsDefinitionContent" /> class.
         /// </summary>
-        /// <param name="customerKey">Unique identifier of the content asset. (required).</param>
-        public CreateEmailDefinitionContent(string customerKey = default(string))
+        /// <param name="message">The message content that you want sent with each message. Use substitution strings and AMPscript to personalize the message. (required).</param>
+        public SmsDefinitionContent(string message = default(string))
         {
-            // to ensure "customerKey" is required (not null)
-            if (customerKey == null)
+            // to ensure "message" is required (not null)
+            if (message == null)
             {
-                throw new InvalidDataException("customerKey is a required property for CreateEmailDefinitionContent and cannot be null");
+                throw new InvalidDataException("message is a required property for SmsDefinitionContent and cannot be null");
             }
             else
             {
-                this.CustomerKey = customerKey;
+                this.Message = message;
             }
         }
         
         /// <summary>
-        /// Unique identifier of the content asset.
+        /// The message content that you want sent with each message. Use substitution strings and AMPscript to personalize the message.
         /// </summary>
-        /// <value>Unique identifier of the content asset.</value>
-        [DataMember(Name="customerKey", EmitDefaultValue=false)]
-        public string CustomerKey { get; set; }
+        /// <value>The message content that you want sent with each message. Use substitution strings and AMPscript to personalize the message.</value>
+        [DataMember(Name="message", EmitDefaultValue=false)]
+        public string Message { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -66,8 +66,8 @@ namespace Salesforce.MarketingCloud.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CreateEmailDefinitionContent {\n");
-            sb.Append("  CustomerKey: ").Append(CustomerKey).Append("\n");
+            sb.Append("class SmsDefinitionContent {\n");
+            sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -88,24 +88,24 @@ namespace Salesforce.MarketingCloud.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CreateEmailDefinitionContent);
+            return this.Equals(input as SmsDefinitionContent);
         }
 
         /// <summary>
-        /// Returns true if CreateEmailDefinitionContent instances are equal
+        /// Returns true if SmsDefinitionContent instances are equal
         /// </summary>
-        /// <param name="input">Instance of CreateEmailDefinitionContent to be compared</param>
+        /// <param name="input">Instance of SmsDefinitionContent to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CreateEmailDefinitionContent input)
+        public bool Equals(SmsDefinitionContent input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.CustomerKey == input.CustomerKey ||
-                    (this.CustomerKey != null &&
-                    this.CustomerKey.Equals(input.CustomerKey))
+                    this.Message == input.Message ||
+                    (this.Message != null &&
+                    this.Message.Equals(input.Message))
                 );
         }
 
@@ -118,8 +118,8 @@ namespace Salesforce.MarketingCloud.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.CustomerKey != null)
-                    hashCode = hashCode * 59 + this.CustomerKey.GetHashCode();
+                if (this.Message != null)
+                    hashCode = hashCode * 59 + this.Message.GetHashCode();
                 return hashCode;
             }
         }

@@ -25,16 +25,16 @@ using SwaggerDateConverter = Salesforce.MarketingCloud.Client.SwaggerDateConvert
 namespace Salesforce.MarketingCloud.Model
 {
     /// <summary>
-    /// CreateEmailDefinitionOptionsRequest
+    /// EmailDefinitionOptions
     /// </summary>
     [DataContract]
-    public partial class CreateEmailDefinitionOptionsRequest :  IEquatable<CreateEmailDefinitionOptionsRequest>, IValidatableObject
+    public partial class EmailDefinitionOptions :  IEquatable<EmailDefinitionOptions>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateEmailDefinitionOptionsRequest" /> class.
+        /// Initializes a new instance of the <see cref="EmailDefinitionOptions" /> class.
         /// </summary>
         /// <param name="trackLinks">Wraps links for tracking and reporting. Default is true..</param>
-        public CreateEmailDefinitionOptionsRequest(bool? trackLinks = default(bool?))
+        public EmailDefinitionOptions(bool? trackLinks = default(bool?))
         {
             this.TrackLinks = trackLinks;
         }
@@ -53,7 +53,7 @@ namespace Salesforce.MarketingCloud.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CreateEmailDefinitionOptionsRequest {\n");
+            sb.Append("class EmailDefinitionOptions {\n");
             sb.Append("  TrackLinks: ").Append(TrackLinks).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -75,15 +75,15 @@ namespace Salesforce.MarketingCloud.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CreateEmailDefinitionOptionsRequest);
+            return this.Equals(input as EmailDefinitionOptions);
         }
 
         /// <summary>
-        /// Returns true if CreateEmailDefinitionOptionsRequest instances are equal
+        /// Returns true if EmailDefinitionOptions instances are equal
         /// </summary>
-        /// <param name="input">Instance of CreateEmailDefinitionOptionsRequest to be compared</param>
+        /// <param name="input">Instance of EmailDefinitionOptions to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CreateEmailDefinitionOptionsRequest input)
+        public bool Equals(EmailDefinitionOptions input)
         {
             if (input == null)
                 return false;
