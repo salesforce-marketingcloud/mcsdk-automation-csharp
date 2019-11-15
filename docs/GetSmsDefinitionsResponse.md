@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RequestId** | **string** | The ID of the request | [optional] 
-**Definitions** | [**List&lt;CreateSmsDefinitionRequest&gt;**](CreateSmsDefinitionRequest.md) |  | [optional] 
+**Definitions** | [**List&lt;SmsDefinition&gt;**](SmsDefinition.md) |  | [optional] 
 **Count** | **int?** | Number of pages | [optional] 
 **Page** | **int?** | Page number to return. | [optional] 
 **PageSize** | **int?** | Number of definitions, which are array elements, to return per paged response. | [optional] 

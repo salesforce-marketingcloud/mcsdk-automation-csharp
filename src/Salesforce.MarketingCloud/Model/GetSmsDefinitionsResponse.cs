@@ -38,7 +38,7 @@ namespace Salesforce.MarketingCloud.Model
         /// <param name="count">Number of pages.</param>
         /// <param name="page">Page number to return..</param>
         /// <param name="pageSize">Number of definitions, which are array elements, to return per paged response..</param>
-        public GetSmsDefinitionsResponse(string requestId = default(string), List<CreateSmsDefinitionRequest> definitions = default(List<CreateSmsDefinitionRequest>), int? count = default(int?), int? page = default(int?), int? pageSize = default(int?))
+        public GetSmsDefinitionsResponse(string requestId = default(string), List<SmsDefinition> definitions = default(List<SmsDefinition>), int? count = default(int?), int? page = default(int?), int? pageSize = default(int?))
         {
             this.RequestId = requestId;
             this.Definitions = definitions;
@@ -58,7 +58,7 @@ namespace Salesforce.MarketingCloud.Model
         /// Gets or Sets Definitions
         /// </summary>
         [DataMember(Name="definitions", EmitDefaultValue=false)]
-        public List<CreateSmsDefinitionRequest> Definitions { get; set; }
+        public List<SmsDefinition> Definitions { get; set; }
 
         /// <summary>
         /// Number of pages
