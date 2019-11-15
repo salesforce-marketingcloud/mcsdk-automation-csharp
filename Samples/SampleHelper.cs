@@ -41,7 +41,7 @@ namespace Salesforce.MarketingCloud.Samples
            return new Asset(customerKey: customerKey, assetType: assetType, name: assetName, description: assetDescription, views: views);
         }
 
-        public static CreateEmailDefinitionRequest CreateEmailDefinitionObject(AssetApi assetApi)
+        public static EmailDefinition CreateEmailDefinitionObject(AssetApi assetApi)
         {
             /* Replace '<SUBSCRIBERS LIST KEY>' with the key of
             one of your subscribers lists or use 'All Subscribers'*/
@@ -52,10 +52,10 @@ namespace Salesforce.MarketingCloud.Samples
             var customerKey = createAssetResult.CustomerKey;
             var emailDefinitionName = $"{Guid.NewGuid()}";
             var emailDefinitionKey = $"{Guid.NewGuid()}";
-            var content = new CreateEmailDefinitionContent(customerKey);
-            var subscriptions = new CreateEmailDefinitionSubscriptions(subscribersListKey);
+            var content = new EmailDefinitionContent(customerKey);
+            var subscriptions = new EmailDefinitionSubscriptions(subscribersListKey);
 
-            return new CreateEmailDefinitionRequest(emailDefinitionName, emailDefinitionKey, content: content, subscriptions: subscriptions);
+            return new EmailDefinition(emailDefinitionName, emailDefinitionKey, content: content, subscriptions: subscriptions);
         }
     }
 }
