@@ -9,7 +9,7 @@ The Salesforce Marketing Cloud C# SDK enables developers to easily access the Sa
 
 ## Supported Features
 
-- [Transactional Messaging](https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/transactional-messaging-api.htm#!)
+- [Transactional Messaging](https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/transactional-messaging-api.htm)
 
 ## Environment Requirements
 
@@ -24,7 +24,7 @@ To consume this SDK add the [Salesforce Marketing Cloud SDK](https://www.nuget.o
 
 ## Getting Started
 
-To find more information on how to consume the SDK, Refer to the [Regression tests](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/1.0/src/Salesforce.MarketingCloud.Test/Api) or the [Code Samples](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/1.0/Samples)
+To find more information on how to consume the SDK, Refer to the [Regression tests](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/master/src/Salesforce.MarketingCloud.Test/Api) or the [Code Samples](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/master/Samples)
 
 ## Contact us
 
@@ -34,4 +34,4 @@ To find more information on how to consume the SDK, Refer to the [Regression tes
     - 👎 - downvote
 
 ## License
-By contributing your code, you agree to license your contribution under the terms of the [BSD 3-Clause License](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/blob/documentation/license.md).
+By contributing your code, you agree to license your contribution under the terms of the [BSD 3-Clause License](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/blob/master/license.md).
