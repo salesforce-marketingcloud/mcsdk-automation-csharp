@@ -25,29 +25,29 @@ using SwaggerDateConverter = Salesforce.MarketingCloud.Client.SwaggerDateConvert
 namespace Salesforce.MarketingCloud.Model
 {
     /// <summary>
-    /// CreateEmailDefinitionSubscriptions
+    /// EmailDefinitionSubscriptions
     /// </summary>
     [DataContract]
-    public partial class CreateEmailDefinitionSubscriptions :  IEquatable<CreateEmailDefinitionSubscriptions>, IValidatableObject
+    public partial class EmailDefinitionSubscriptions :  IEquatable<EmailDefinitionSubscriptions>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateEmailDefinitionSubscriptions" /> class.
+        /// Initializes a new instance of the <see cref="EmailDefinitionSubscriptions" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CreateEmailDefinitionSubscriptions() { }
+        protected EmailDefinitionSubscriptions() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateEmailDefinitionSubscriptions" /> class.
+        /// Initializes a new instance of the <see cref="EmailDefinitionSubscriptions" /> class.
         /// </summary>
         /// <param name="list">Marketing Cloud external key of the list or all subscribers. Contains the subscriber keys and profile attributes. (required).</param>
         /// <param name="dataExtension">Marketing Cloud external key of the triggered send data extension. Each request inserts as a new row in the data extension..</param>
         /// <param name="autoAddSubscriber">Adds the recipient’s email address and contact key as a subscriber key to subscriptions.list. Default is true. (default to true).</param>
         /// <param name="updateSubscriber">Updates the recipient’s contact key as a subscriber key with the provided email address and profile attributes to subscriptions.list. Default is true..</param>
-        public CreateEmailDefinitionSubscriptions(string list = default(string), string dataExtension = default(string), bool? autoAddSubscriber = true, bool? updateSubscriber = default(bool?))
+        public EmailDefinitionSubscriptions(string list = default(string), string dataExtension = default(string), bool? autoAddSubscriber = true, bool? updateSubscriber = default(bool?))
         {
             // to ensure "list" is required (not null)
             if (list == null)
             {
-                throw new InvalidDataException("list is a required property for CreateEmailDefinitionSubscriptions and cannot be null");
+                throw new InvalidDataException("list is a required property for EmailDefinitionSubscriptions and cannot be null");
             }
             else
             {
@@ -101,7 +101,7 @@ namespace Salesforce.MarketingCloud.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CreateEmailDefinitionSubscriptions {\n");
+            sb.Append("class EmailDefinitionSubscriptions {\n");
             sb.Append("  List: ").Append(List).Append("\n");
             sb.Append("  DataExtension: ").Append(DataExtension).Append("\n");
             sb.Append("  AutoAddSubscriber: ").Append(AutoAddSubscriber).Append("\n");
@@ -126,15 +126,15 @@ namespace Salesforce.MarketingCloud.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as CreateEmailDefinitionSubscriptions);
+            return this.Equals(input as EmailDefinitionSubscriptions);
         }
 
         /// <summary>
-        /// Returns true if CreateEmailDefinitionSubscriptions instances are equal
+        /// Returns true if EmailDefinitionSubscriptions instances are equal
         /// </summary>
-        /// <param name="input">Instance of CreateEmailDefinitionSubscriptions to be compared</param>
+        /// <param name="input">Instance of EmailDefinitionSubscriptions to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CreateEmailDefinitionSubscriptions input)
+        public bool Equals(EmailDefinitionSubscriptions input)
         {
             if (input == null)
                 return false;

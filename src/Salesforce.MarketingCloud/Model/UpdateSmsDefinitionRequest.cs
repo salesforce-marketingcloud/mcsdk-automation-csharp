@@ -38,7 +38,7 @@ namespace Salesforce.MarketingCloud.Model
         /// <param name="status">Operational state of the definition: active, inactive, or deleted. A message sent to an active definition is processed and delivered. A message sent to an inactive definition isn’t processed or delivered. Instead, the message is queued for later processing for up to three days..</param>
         /// <param name="description">User-provided description of the SMS definition..</param>
         /// <param name="subscriptions">subscriptions.</param>
-        public UpdateSmsDefinitionRequest(string name = default(string), CreateSmsDefinitionContent content = default(CreateSmsDefinitionContent), string status = default(string), string description = default(string), CreateSmsDefinitionSubscriptions subscriptions = default(CreateSmsDefinitionSubscriptions))
+        public UpdateSmsDefinitionRequest(string name = default(string), SmsDefinitionContent content = default(SmsDefinitionContent), string status = default(string), string description = default(string), SmsDefinitionSubscriptions subscriptions = default(SmsDefinitionSubscriptions))
         {
             this.Name = name;
             this.Content = content;
@@ -58,7 +58,7 @@ namespace Salesforce.MarketingCloud.Model
         /// Gets or Sets Content
         /// </summary>
         [DataMember(Name="content", EmitDefaultValue=false)]
-        public CreateSmsDefinitionContent Content { get; set; }
+        public SmsDefinitionContent Content { get; set; }
 
         /// <summary>
         /// Operational state of the definition: active, inactive, or deleted. A message sent to an active definition is processed and delivered. A message sent to an inactive definition isn’t processed or delivered. Instead, the message is queued for later processing for up to three days.
@@ -78,7 +78,7 @@ namespace Salesforce.MarketingCloud.Model
         /// Gets or Sets Subscriptions
         /// </summary>
         [DataMember(Name="subscriptions", EmitDefaultValue=false)]
-        public CreateSmsDefinitionSubscriptions Subscriptions { get; set; }
+        public SmsDefinitionSubscriptions Subscriptions { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
