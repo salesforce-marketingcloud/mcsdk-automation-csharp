@@ -26,6 +26,12 @@ To consume this SDK add the [Salesforce Marketing Cloud SDK](https://www.nuget.o
 
 To find more information on how to consume the SDK, Refer to the [Regression tests](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/master/src/Salesforce.MarketingCloud.Test/Api) or the [Code Samples](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/tree/master/Samples)
 
+### Note
+
+- Most of the code in this repo is auto generated from the [mcsdk-automation-framework-core](https://github.com/salesforce-marketingcloud/mcsdk-automation-framework-core) and the [mcsdk-automation-framework-csharp](https://github.com/salesforce-marketingcloud/mcsdk-automation-framework-csharp) repos. Other features like authentication flow, caching are directly implemented in this repo.
+- If any change is needed in the auto generated code, it has to come from the [mcsdk-automation-framework-core](https://github.com/salesforce-marketingcloud/mcsdk-automation-framework-core) or the [mcsdk-automation-framework-csharp](https://github.com/salesforce-marketingcloud/mcsdk-automation-framework-csharp) repos.
+- If any change is needed in the auth flow or caching, it should be done in this repo.
+
 ## Contact us
 
 - Request a [new feature](https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), add a question or report a bug on GitHub.
