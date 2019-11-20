@@ -10,6 +10,7 @@
     <AssemblyTitle>Salesforce Marketing Cloud C# SDK</AssemblyTitle>
     <Description>The Salesforce Marketing Cloud C# SDK</Description>
     <Copyright>Copyright Salesforce 2019</Copyright>
+    <RepositoryUrl>https://github.com/salesforce-marketingcloud/mcsdk-automation-csharp</RepositoryUrl>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
